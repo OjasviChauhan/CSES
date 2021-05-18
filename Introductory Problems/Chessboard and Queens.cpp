@@ -53,9 +53,7 @@ void helper(char A[][8], int i, int &ans) {
 
         if (isSafe(A, i, j)) {
             A[i][j] = 'q';
-
             helper(A, i + 1, ans);
-
             A[i][j] = '.';  //backtrack
         }
     }
